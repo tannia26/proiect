@@ -1,0 +1,792 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a,
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.favpic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+}
+
+/******************************************* NAVBAR **********************************************/
+
+.navbar {
+    /*background-color: rgba(226, 206, 206, 0.2);*/
+    height: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.nav-links li a {
+    margin: 3rem;
+}
+
+.nav-links-left,
+.nav-links-right {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 45%;
+}
+
+.nav-links-right {
+    position: relative;
+}
+
+.nav-links-right .favicon {
+    position: absolute;
+    left: -7rem;
+    top: -0.8rem;
+}
+
+/******************************************* DROPDOWN NAVBAR **********************************************/
+
+/******************************************* DROPDOWN LOCATIONS **********************************************/
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-locations__content {
+    display: none;
+    position: absolute;
+    background-color: #efefef;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-locations__content a {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown1:hover .dropdown-locations__content {
+    display: block;
+}
+
+/******************************************* DROPDOWN RECIPES **********************************************/
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-recipes__content {
+    display: none;
+    position: absolute;
+    background-color: #efefef;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-recipes__content a {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown2:hover .dropdown-recipes__content {
+    display: block;
+}
+
+/******************************************* CONTACT BUTTON **********************************************/
+
+.container .navbar .nav-links .contact button {
+    background-color: #d6ccc2;
+    font-family: "Montserrat", sans-serif;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.container .navbar .nav-links .contact button:hover {
+    background-color: #bcb8b1;
+}
+
+button {
+    transition: 0.5s;
+}
+
+/******************************************* HOME-CONTENT **********************************************/
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50vw;
+}
+
+.home .home-title {
+    font-size: 3rem;
+    padding-left: 20px;
+    padding-bottom: 0%;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 0%;
+    font-family: "Abril Fatface", cursive;
+}
+
+.home .home-title2 {
+    font-size: 2rem;
+    color: #6c757d;
+    /*line-height: 1.5;*/
+    display: flex;
+    padding-left: 41px;
+    padding-top: 0%;
+    padding-bottom: 7rem;
+}
+
+.home-description {
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 3rem;
+    margin-bottom: 20rem;
+    margin-left: 10px;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    width: 9rem;
+}
+
+/******************************************* ICONS **********************************************/
+
+/*.container .home2 .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    margin-bottom: 0%;
+    background-color: #fff;
+}
+
+.container .home2 .words {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 7rem;
+    padding-right: 8rem;
+    margin-top: 1rem;
+    font-size: 1rem; 
+}*/
+
+/*.container {
+    overflow-x: hidden;
+}*/
+
+/******************************************* MUFFIN RECIPE **********************************************/
+
+.body {
+    background: #d6ccc2;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+}
+
+.bx {
+    font-size: 3rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+    font-family: "Homemade Apple", cursive;
+    font-size: 2.5rem;
+    /*background-color: #efefef;*/
+}
+
+h3 {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    /*background-color: #efefef;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.3rem;
+      border: 0;*/
+}
+
+h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    /*background-color: #efefef;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.3rem;
+      border: 0;*/
+}
+
+.recipe-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ingredient-list {
+    margin-bottom: 20px;
+    margin-left: 1.4rem;
+    font-size: 1.2rem;
+}
+
+.ingredient-list ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.ingredient-list ul li {
+    margin-bottom: 15px;
+}
+
+.instruction-list {
+    margin-bottom: 20px;
+    margin-left: 0%;
+    font-size: 1.2rem;
+}
+
+.instruction-list ol {
+    counter-reset: step-counter;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.instruction-list ol li {
+    counter-increment: step-counter;
+    margin-bottom: 25px;
+}
+
+.instruction-list ol li::before {
+    content: counter(step-counter);
+    background-color: #efefef;
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+}
+
+table {
+    width: 30%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-right: 2rem;
+    background-color: #efefef;
+    border-radius: 0.7rem;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.muffin-image {
+    text-align: right;
+    position: relative;
+    margin-top: -34rem;
+    margin-right: 1.9rem;
+    color: #efefef;
+}
+
+.muffin-image img {
+    border-radius: 0.7rem;
+}
+/******************************************* COOKIE RECIPE **********************************************/
+
+.body {
+    background: #d6ccc2;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+}
+
+.bx {
+    font-size: 3rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+    font-family: "Homemade Apple", cursive;
+    font-size: 2.5rem;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.recipe-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ingredient-list {
+    margin-bottom: 20px;
+    margin-left: 1.4rem;
+    font-size: 1.2rem;
+}
+
+.ingredient-list ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.ingredient-list ul li {
+    margin-bottom: 15px;
+}
+
+.instruction-list {
+    margin-bottom: 20px;
+    margin-left: 0%;
+    font-size: 1.2rem;
+}
+
+.instruction-list ol {
+    counter-reset: step-counter;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.instruction-list ol li {
+    counter-increment: step-counter;
+    margin-bottom: 25px;
+}
+
+.instruction-list ol li::before {
+    content: counter(step-counter);
+    background-color: #efefef;
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+}
+
+table {
+    width: 30%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-right: 2rem;
+    background-color: #efefef;
+    border-radius: 0.7rem;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.cookie-image {
+    text-align: right;
+    position: relative;
+    margin-top: -33rem;
+    margin-right: 1.9rem;
+    border-radius: 30%;
+    color: #efefef;
+}
+
+.cookie-image img {
+    border-radius: 0.7rem;
+}
+
+/******************************************* BROWNIE RECIPE **********************************************/
+
+.body {
+    background: #d6ccc2;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+}
+
+.bx {
+    font-size: 3rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+    font-family: "Homemade Apple", cursive;
+    font-size: 2.5rem;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.recipe-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ingredient-list {
+    margin-bottom: 20px;
+    margin-left: 1.4rem;
+    font-size: 1.2rem;
+}
+
+.ingredient-list ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.ingredient-list ul li {
+    margin-bottom: 15px;
+}
+
+.instruction-list {
+    margin-bottom: 20px;
+    margin-left: 0%;
+    font-size: 1.2rem;
+}
+
+.instruction-list ol {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.instruction-list ol li {
+    margin-bottom: 25px;
+}
+
+.instruction-list ol li::before {
+    content: counter(step-counter);
+    background-color: #efefef;
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+}
+
+table {
+    width: 30%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-right: 2rem;
+    background-color: #efefef;
+    border-radius: 0.7rem;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.brownie-image {
+    text-align: right;
+    position: relative;
+    margin-top: -27rem;
+    margin-right: 1.9rem;
+    color: #efefef;
+}
+
+.brownie-image img {
+    border-radius: 0.7rem;
+}
+
+/******************************************* BOSTON & CAMBRIDGE LOCATION **********************************************/
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.boston-container {
+    width: 100vw;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+.bx-chevron-left {
+    position: absolute;
+    font-size: 3rem;
+    z-index: 5;
+    position: fixed;
+}
+
+.logo-boston-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.boston-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.name-boston1 {
+    font-size: 4rem;
+    font-family: "Abril Fatface", cursive;
+}
+
+.name-boston2 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.logo-boston-image {
+    margin-right: 10px;
+}
+
+.logo-boston-image img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.assembly-row {
+    font-size: 1.2rem;
+    margin-top: 8rem;
+    margin-left: 13.5rem;
+    background-color: #efefef;
+    font-family: "Montserrat", sans-serif;
+    padding-left: 8.3rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-radius: 0.3rem;
+    border: 0;
+    cursor: pointer;
+    margin-right: 54rem;
+    margin-bottom: -6rem;
+}
+
+.bakery-image {
+    text-align: right;
+    position: relative;
+    margin-top: -41.5rem;
+    margin-right: 1.9rem;
+    border-radius: 1rem;
+    color: #efefef;
+    padding-right: 5rem;
+    padding-left: 0%;
+}
+
+.bakery-image2 {
+    text-align: right;
+    position: relative;
+    margin-top: -36.3rem;
+    margin-right: 1.9rem;
+    border-radius: 1rem;
+    color: #efefef;
+    padding-right: 7rem;
+    padding-left: 0%;
+}
+
+.bakery-image img,
+.bakery-image2 img {
+  border-radius: 0.7rem;
+}
+
+
+/***js***/
+
+
+
+/******************************************* CONTACT-PAGE **********************************************/
+.meraki {
+    height: 88%;
+    width: 55%;
+    border-radius: 0.7rem;
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.container-contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-contact-image {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-names {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name-contact {
+    font-size: 3rem;
+    font-family: "Abril Fatface", cursive;
+}
+
+.name-contact2 {
+    font-size: 1.3rem;
+    margin-left: 1.2rem;
+}
+
+.name-contact-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.meraki form label,
+.meraki form input,
+.meraki form textarea,
+.meraki form input[type="submit"] {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.contact-data {
+  padding-top: 1rem;
+}
+
+.contact-us {
+  margin-left: 0.7rem;
+  font-family: "Abril Fatface", cursive;
+  font-size: 1.5rem;
+}
+
+
+
+
+/******************************************* ABOUT US **********************************************/
+
+.about-us {
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: start;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.about-us-title {
+  font-size: 2rem;
+  padding-left: 1rem;
+  background-color: #efefef;
+  border-radius: 0.7rem;
+  margin-right: 1rem;
+}
+
+.about-us-text {
+  width: 50%;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.bakery-image3 {
+  width: 50%;
+  text-align: center;
+  padding-top: 0.3rem;
+}
+
+.bakery-image3 img {
+  border-radius: 0.7rem;
+}

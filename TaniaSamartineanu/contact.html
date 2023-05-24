@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Contact</title>
+    </head>
+    <body>
+        <div class="container container-contact">
+            <div class="logo-contact-image">
+                <img
+                    src="assets/images/favicon.png"
+                    alt="favicon"
+                    width="70px"
+                    height="70px"
+                    class="favicon"
+                />
+            </div>
+            <div class="contact-names">
+                <div class="name-contact-container">
+                    <div class="name-contact">
+                        <p>M e r a k i</p>
+                    </div>
+                    <div class="name-contact2">
+                        <span>BAKERY & CAFÉ</span>
+                    </div>
+                </div>
+
+                <div class="meraki">
+                    <div class="contact-us">
+                        <h7>Contact Us</h7>
+                    </div>
+
+                    <div class="contact-data">
+                        <form action="/submit_contact" method="POST">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required />
+
+                            <label for="email">Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                            />
+
+                            <label for="phone">Phone:</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                required
+                            />
+
+                            <label for="message">Message:</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                required
+                            ></textarea>
+
+                            <input type="submit" value="Submit" />
+                        </form>
+                    </div>
+                </div>
+                <div class="contact-image img">
+                    <img
+                        src="assets/images/contact.jpg"
+                        alt="contact"
+                        width="500px"
+                    />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
