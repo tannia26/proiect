@@ -678,7 +678,27 @@ li {
 
 
 /***js***/
-
+.boston-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /*.item {
+    margin-bottom: 10px;
+  }
+  
+  .item-body {
+    background-color: lightgray;
+    padding: 10px;
+    cursor: pointer;
+  }
+  */
+  
+  .dropdown {
+    display: none;
+    background-color: lightblue;
+    padding: 10px;
+  }
 
 
 /******************************************* CONTACT-PAGE **********************************************/
