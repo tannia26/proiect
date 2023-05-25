@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Boston</title>
-
         <link rel="stylesheet" href="styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,54 +21,77 @@
             rel="stylesheet"
         />
     </head>
-        <body>
-            <div class="boston-container">
-                <a href="index.html"><i class="bx bx-chevron-left"></i></a>
-                <div class="logo-boston-image">
-                    <img
-                        src="assets/images/favicon.png"
-                        alt="favicon"
-                        width="70px"
-                        height="70px"
-                        class="favicon"
-                    />
+    <body>
+        <div class="boston-container">
+            <a href="index.html"><i class="bx bx-chevron-left"></i></a>
+            <div class="logo-boston-image">
+                <img
+                    src="assets/images/favicon.png"
+                    alt="favicon"
+                    width="70px"
+                    height="70px"
+                    class="favicon"
+                />
+            </div>
+            <div class="boston-names">
+                <div class="name-boston1">
+                    <h5>M e r a k i</h5>
                 </div>
-                <div class="boston-names">
-                    <div class="name-boston1">
-                        <h5>M e r a k i</h5>
-                    </div>
-                    <div class="name-boston2">
-                        <span>BAKERY &amp; CAFÉ</span>
-                    </div>
+                <div class="name-boston2">
+                    <span>BAKERY &amp; CAFÉ</span>
                 </div>
-                <div>
-
+            </div>
+            <div class="cities-image">
+                <div class="cities">
                     <div class="item" onclick="toggleDropdown(1)">
-                        <div class="assembly-row">
-                            ○ ASSEMBLY ROW
-                        </div>
-                        <div class="dropdown-boston" id="dropdown-boston1">
+                        <div class="assembly-row">○ ASSEMBLY ROW</div>
+                        <div class="dropdown" id="dropdown-1">
                             aicea tre sa scrie ceva
                         </div>
                     </div>
 
                     <div class="item" onclick="toggleDropdown(2)">
-                        <div class="assembly-row">
-                            ○ ASSEMBLY ROW
-                        </div>
-                        <div class="dropdown-boston" id="dropdown-boston2">
+                        <div class="assembly-row">○ BEACON HILL</div>
+                        <div class="dropdown" id="dropdown-2">
                             aicea tre sa scrie ceva
                         </div>
                     </div>
-
-                    <div class="assembly-row">○ ASSEMBLY ROW</div>
-                    <div class="assembly-row">○ BEACON HILL</div>
-                    <div class="assembly-row">○ BERKLEE</div>
-                    <div class="assembly-row">○ CHARLESTOWN</div>
-                    <div class="assembly-row">○ EMERSON</div>
-                    <div class="assembly-row">○ HIGH STREET</div>
-                    <div class="assembly-row">○ WELLESLEY</div>
-                    <div class="assembly-row">○ SUMMER STREET</div>
+                    <div class="item" onclick="toggleDropdown(3)">
+                        <div class="assembly-row">○ BERKLEE</div>
+                        <div class="dropdown" id="dropdown-3">
+                            aicea tre sa scrie ceva
+                        </div>
+                    </div>
+                    <div class="item" onclick="toggleDropdown(4)">
+                        <div class="assembly-row">○ CHARLESTOWN</div>
+                        <div class="dropdown" id="dropdown-4">
+                            aicea tre sa scrie ceva
+                        </div>
+                    </div>
+                    <div class="item" onclick="toggleDropdown(5)">
+                        <div class="assembly-row">○ EMERSON</div>
+                        <div class="dropdown" id="dropdown-5">
+                            aicea tre sa scrie ceva
+                        </div>
+                    </div>
+                    <div class="item" onclick="toggleDropdown(6)">
+                        <div class="assembly-row">○ HIGH STREET</div>
+                        <div class="dropdown" id="dropdown-6">
+                            aicea tre sa scrie ceva
+                        </div>
+                    </div>
+                    <div class="item" onclick="toggleDropdown(7)">
+                        <div class="assembly-row">○ WELLESLEY</div>
+                        <div class="dropdown" id="dropdown-7">
+                            aicea tre sa scrie ceva
+                        </div>
+                    </div>
+                    <div class="item" onclick="toggleDropdown(8)">
+                        <div class="assembly-row">○ SUMMER STREET</div>
+                        <div class="dropdown" id="dropdown-8">
+                            aicea tre sa scrie ceva
+                        </div>
+                    </div>
                 </div>
 
                 <div class="bakery-image img">
@@ -81,7 +103,17 @@
                     />
                 </div>
             </div>
+        </div>
 
-            <script src="script.js"></script>
-        </body>
+        <script>
+            function toggleDropdown(index) {
+                const dropdown = document.getElementById(`dropdown-${index}`);
+                const computedStyle = window.getComputedStyle(dropdown);
+                const isHidden =
+                    computedStyle.getPropertyValue('display') === 'none';
+
+                dropdown.style.display = isHidden ? 'block' : 'none';
+            }
+        </script>
+    </body>
 </html>

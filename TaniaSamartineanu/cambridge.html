@@ -42,24 +42,80 @@
                     <span>BAKERY &amp; CAFÉ</span>
                 </div>
             </div>
-            <div>
-                <div class="assembly-row">○ MAIN STREET </div>
-                <div class="assembly-row">○ C. CROSSING</div>
-                <div class="assembly-row">○ HARVARD SQ </div>
-                <div class="assembly-row">○ THIRD STREET </div>
-                <div class="assembly-row">○ COOLIDGE CORNER </div>
-                <div class="assembly-row">○ BEACON ST </div>
-                <div class="assembly-row">○ COOLIDGE CORNER </div>
-            </div>
+            <div class="cities-image">
+                <div class="cities">
+                    <div class="item" onclick="toggleDropdown(1)">
+                        <div class="assembly-row">○ ASSEMBLY ROW</div>
+                        <div class="dropdown" id="dropdown-1">
+                            aicea tre sa scrie ceva
+                        </div>
+                    </div>
 
-            <div class="bakery-image2 img">
-                <img
-                    src="assets/images/bakery-image2.jpeg"
-                    alt="bakery image"
-                    width="450px"
-                    height="600px"
-                />
+                    <div class="item" onclick="toggleDropdown(2)">
+                        <div class="assembly-row">○ BEACON HILL</div>
+                        <div class="dropdown" id="dropdown-2">
+                            aicea tre sa scrie ceva
+                        </div>
+                    </div>
+                    <div class="item" onclick="toggleDropdown(3)">
+                        <div class="assembly-row">○ BERKLEE</div>
+                        <div class="dropdown" id="dropdown-3">
+                            aicea tre sa scrie ceva
+                        </div>
+                    </div>
+                    <div class="item" onclick="toggleDropdown(4)">
+                        <div class="assembly-row">○ CHARLESTOWN</div>
+                        <div class="dropdown" id="dropdown-4">
+                            aicea tre sa scrie ceva
+                        </div>
+                    </div>
+                    <div class="item" onclick="toggleDropdown(5)">
+                        <div class="assembly-row">○ EMERSON</div>
+                        <div class="dropdown" id="dropdown-5">
+                            aicea tre sa scrie ceva
+                        </div>
+                    </div>
+                    <div class="item" onclick="toggleDropdown(6)">
+                        <div class="assembly-row">○ HIGH STREET</div>
+                        <div class="dropdown" id="dropdown-6">
+                            aicea tre sa scrie ceva
+                        </div>
+                    </div>
+                    <div class="item" onclick="toggleDropdown(7)">
+                        <div class="assembly-row">○ WELLESLEY</div>
+                        <div class="dropdown" id="dropdown-7">
+                            aicea tre sa scrie ceva
+                        </div>
+                    </div>
+                    <div class="item" onclick="toggleDropdown(8)">
+                        <div class="assembly-row">○ SUMMER STREET</div>
+                        <div class="dropdown" id="dropdown-8">
+                            aicea tre sa scrie ceva
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bakery-image img">
+                    <img
+                        src="assets/images/bakery-image2.jpeg"
+                        alt="bakery image"
+                        width="550px"
+                        height="680px"
+                    />
+                </div>
             </div>
         </div>
-    </body>
-</html>     
+
+    </div>
+</body>
+<script>
+    function toggleDropdown(index) {
+        const dropdown = document.getElementById(`dropdown-${index}`);
+        const computedStyle = window.getComputedStyle(dropdown);
+        const isHidden =
+            computedStyle.getPropertyValue('display') === 'none';
+
+        dropdown.style.display = isHidden ? 'block' : 'none';
+    }
+</script>
+</html>

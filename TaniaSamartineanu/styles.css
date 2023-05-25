@@ -7,7 +7,7 @@
 }
 a,
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 15px;
     color: black;
@@ -75,7 +75,7 @@ body {
 
 .nav-links-right .favicon {
     position: absolute;
-    left: -7rem;
+    left: -7.8rem;
     top: -0.8rem;
 }
 
@@ -139,7 +139,7 @@ body {
 
 .container .navbar .nav-links .contact button {
     background-color: #d6ccc2;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 0.5rem 1.5rem;
     border-radius: 0.3rem;
     border: 0;
@@ -173,7 +173,7 @@ button {
     align-items: center;
     margin-top: 5rem;
     margin-bottom: 0%;
-    font-family: "Abril Fatface", cursive;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .home .home-title2 {
@@ -238,7 +238,7 @@ button {
 .body {
     background: #d6ccc2;
     color: black;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 20px;
 }
 
@@ -250,7 +250,7 @@ h2 {
     text-align: center;
     margin-bottom: 5rem;
     margin-top: 1rem;
-    font-family: "Homemade Apple", cursive;
+    font-family: 'Homemade Apple', cursive;
     font-size: 2.5rem;
     /*background-color: #efefef;*/
 }
@@ -356,7 +356,7 @@ td {
 .body {
     background: #d6ccc2;
     color: black;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 20px;
 }
 
@@ -368,7 +368,7 @@ h2 {
     text-align: center;
     margin-bottom: 5rem;
     margin-top: 1rem;
-    font-family: "Homemade Apple", cursive;
+    font-family: 'Homemade Apple', cursive;
     font-size: 2.5rem;
 }
 
@@ -467,7 +467,7 @@ td {
 .body {
     background: #d6ccc2;
     color: black;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 20px;
 }
 
@@ -479,7 +479,7 @@ h2 {
     text-align: center;
     margin-bottom: 5rem;
     margin-top: 1rem;
-    font-family: "Homemade Apple", cursive;
+    font-family: 'Homemade Apple', cursive;
     font-size: 2.5rem;
 }
 
@@ -608,7 +608,7 @@ body {
 
 .name-boston1 {
     font-size: 4rem;
-    font-family: "Abril Fatface", cursive;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .name-boston2 {
@@ -633,31 +633,24 @@ li {
 }
 
 .assembly-row {
+    height: 5rem;
+    width: 40rem;
     font-size: 1.2rem;
-    margin-top: 8rem;
-    margin-left: 13.5rem;
+
     background-color: #efefef;
-    font-family: "Montserrat", sans-serif;
-    padding-left: 8.3rem;
-    padding-right: 5rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    /* padding: sus dreapta jos stanga; */
+    padding: 2rem;
     border-radius: 0.3rem;
     border: 0;
     cursor: pointer;
-    margin-right: 54rem;
-    margin-bottom: -6rem;
+
+    position: relative;
 }
 
 .bakery-image {
-    text-align: right;
-    position: relative;
-    margin-top: -41.5rem;
-    margin-right: 1.9rem;
-    border-radius: 1rem;
-    color: #efefef;
-    padding-right: 5rem;
-    padding-left: 0%;
+    height: auto;
+    width: 40rem;
 }
 
 .bakery-image2 {
@@ -673,44 +666,62 @@ li {
 
 .bakery-image img,
 .bakery-image2 img {
-  border-radius: 0.7rem;
+    border-radius: 0.7rem;
 }
-
 
 /***js***/
 .boston-container {
     display: flex;
     flex-direction: column;
-  }
-  
-  /*.item {
-    margin-bottom: 10px;
-  }
-  
-  .item-body {
-    background-color: lightgray;
-    padding: 10px;
-    cursor: pointer;
-  }
-  */
-  
-  .dropdown {
-    display: none;
-    background-color: lightblue;
-    padding: 10px;
-  }
+}
 
+.cities-image {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.cities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    gap: 1rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.dropdown {
+    width: 40rem;
+    height: 5rem;
+    background-color: lightblue;
+    display: none;
+}
 
 /******************************************* CONTACT-PAGE **********************************************/
 .meraki {
     height: 88%;
     width: 55%;
     border-radius: 0.7rem;
-    background-color: #efefef;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    margin-top: 5rem;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10rem;
+    position: relative;
+    box-shadow: 0px 0px 184px -8px rgba(231, 231, 231, 0.78);
+    z-index: -2;
 }
 
 .container-contact {
@@ -726,6 +737,20 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.contact-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/images/contact.jpg);
+    background-size: cover;
+    border-radius: 0.7rem;
+    opacity: 0.1;
+    z-index: -1;
 }
 
 .contact-names {
@@ -735,11 +760,12 @@ li {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    z-index: 0;
 }
 
 .name-contact {
     font-size: 3rem;
-    font-family: "Abril Fatface", cursive;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .name-contact2 {
@@ -748,65 +774,101 @@ li {
 }
 
 .name-contact-container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 .meraki form label,
 .meraki form input,
 .meraki form textarea,
-.meraki form input[type="submit"] {
-  display: flex;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  margin-left: 2rem;
+.meraki form input[type='submit'] {
+    display: flex;
+}
+.contact-data {
+    z-index: 5;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.contact-data {
-  padding-top: 1rem;
+.contact-data form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
 }
 
 .contact-us {
-  margin-left: 0.7rem;
-  font-family: "Abril Fatface", cursive;
-  font-size: 1.5rem;
+    margin-left: 2rem;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4rem;
 }
 
+.input-fields {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
 
+.input-fields input {
+    border: 1px solid lightgrey;
+    height: 1.5rem;
+    width: 15rem;
+    border-radius: 0.2rem;
+}
 
+.input-fields textarea {
+    height: 5rem;
+    width: 13rem;
+    border-radius: 0.2rem;
+    border: 1px solid lightgrey;
+}
+
+.contact-data button {
+    height: 2rem;
+    width: 13rem;
+    border: 1px solid lightgrey;
+    border-radius: 0.2rem;
+    outline: none;
+    background-color: white;
+    margin-top: 1rem;
+    cursor: pointer;
+}
 
 /******************************************* ABOUT US **********************************************/
 
 .about-us {
-  height: 100%;
-  display: flex;
-  justify-content:center;
-  align-items: start;
-  margin-top: 5rem;
-  padding-bottom: 5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .about-us-title {
-  font-size: 2rem;
-  padding-left: 1rem;
-  background-color: #efefef;
-  border-radius: 0.7rem;
-  margin-right: 1rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+    background-color: #efefef;
+    border-radius: 0.7rem;
+    margin-right: 1rem;
 }
 
 .about-us-text {
-  width: 50%;
-  text-align: left;
-  font-size: 1.2rem;
+    width: 50%;
+    text-align: left;
+    font-size: 1.2rem;
 }
 
 .bakery-image3 {
-  width: 50%;
-  text-align: center;
-  padding-top: 0.3rem;
+    width: 50%;
+    text-align: center;
+    padding-top: 0.3rem;
 }
 
 .bakery-image3 img {
-  border-radius: 0.7rem;
+    border-radius: 0.7rem;
 }
